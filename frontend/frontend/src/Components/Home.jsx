@@ -154,7 +154,7 @@ class Home extends React.Component {
 		});
 	};
 
-	handelMale = () => {
+	handleMale = () => {
 		axios.get(`http://localhost:5000/teachers?_page=${this.state.page}&_limit=${this.state.limit}gender=Male`).then((res) => {
 			this.setState({
 				teachers: res.data,
