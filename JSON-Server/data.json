@@ -8,7 +8,14 @@
             "email": "nworsley0@cbsnews.com",
             "gender": "Female",
             "age": 25,
-            "subject" : "Math"
+            "class" : [
+              {
+                "id" : "1A",
+                "class_name" : "Mathematics",
+                "subject_faculty" : "Nappy Worsley",
+                "students" : 20
+              }
+            ]
           }, {
             "id": 2,
             "avatar": "https://robohash.org/quiiustoid.jpg?size=50x50&set=set1",
@@ -181,5 +188,15 @@
             "age": 34,
             "subject" : "Math"
           }
+    ],
+    "users" : [
+      {
+        "username" : "admin",
+        "password" : "test@123"
+      },
+      {
+        "username" : "adminOne",
+        "password" : "test@One"
+      }
     ]
 }

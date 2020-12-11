@@ -61,10 +61,9 @@ class Edit extends React.Component{
 
     render(){
         const {classes} = this.props
-        const {data,email,name,age,gender,avatar} = this.state
+        const {data,email,avatar} = this.state
         const {handleChange} = this
         const {id} = this.props.match.params
-        console.log(id)
         const{status} = this.state
         if(status) {
             return <Redirect to="/home" />
