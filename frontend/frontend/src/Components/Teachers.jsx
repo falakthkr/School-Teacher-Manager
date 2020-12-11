@@ -22,13 +22,13 @@ export default function DetailsTable(props) {
 						</TableCell>
 						<TableCell style={{ color: 'red' }} />
 						<TableCell style={{ color: 'red' }}>
-							<b>Faculty Name</b>
+							<b>Professor</b>
 						</TableCell>
 						<TableCell style={{ color: 'red' }}>
 							<b>Subject</b>
 						</TableCell>
 						<TableCell style={{ color: 'red' }}>
-							<b>Students</b>
+							<b>Classes</b>
 						</TableCell>
 						<TableCell />
 						{/* <TableCell>Gender</TableCell>

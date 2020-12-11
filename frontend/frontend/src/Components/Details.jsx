@@ -37,17 +37,27 @@ class Edit extends React.Component {
 		});
 	}
 
-	editDetails= (id) => {
+	getData = () => {
+		axios.get(`http://localhost:5000/teachers?_page=${this.state.page}&_limit=${this.state.limit}`).then((res) => {
+			this.setState({
+				teachers: res.data,
+				loading: false
+			});
+		});
+	};
+
+	editDetails = (id) => {
 		axios
 			.post('http://localhost:5000/teachers/' + id, {
 				name: this.state.name,
 				email: this.state.email,
 				avatar: this.state.avatar,
-				subject : this.state.subject,
-				gender : this.state.gender
+				subject: this.state.subject,
+				gender: this.state.gender
 			})
-			.then((res) => console.log(res));
+			.then((res) => this.getData());
 	};
+	
 
 	handleChange = (e) => {
 		this.setState({
@@ -74,7 +84,7 @@ class Edit extends React.Component {
 		}
 		return (
 			<div justify="center">
-				<h2>Faculty Info</h2>
+				<h2>Info</h2>
 				{data.map((item) => {
 					if (id == item.id) {
 						return (
@@ -110,26 +120,8 @@ class Edit extends React.Component {
 												</Grid>
 												<Grid item xs={12}>
 													<div className={classes.root}>
-														<h3>Update Info:</h3>
+														<h3>Update Professor Info:</h3>
 														<div>
-															<TextField
-																label="First Name"
-																style={{ marginLeft: '5px', marginRight: '5px' }}
-																id="outlined-margin-dense"
-																placeholder={item.first_name}
-																margin="dense"
-																variant="outlined"
-															/>
-															<TextField
-																label="Last Name"
-																style={{ marginLeft: '5px', marginRight: '5px' }}
-																id="outlined-margin-dense"
-																placeholder={item.last_name}
-																margin="dense"
-																variant="outlined"
-															/>
-															<br />
-															<br />
 															<TextField
 																label="Email"
 																placeholder={item.email}
@@ -141,16 +133,6 @@ class Edit extends React.Component {
 															<TextField
 																label="Subject"
 																placeholder={item.subject}
-																style={{ marginLeft: '5px', marginRight: '5px' }}
-																id="outlined-margin-dense"
-																margin="dense"
-																variant="outlined"
-															/>
-															<br />
-															<br />
-															<TextField
-																label="Gender"
-																placeholder={item.gender}
 																style={{ marginLeft: '5px', marginRight: '5px' }}
 																id="outlined-margin-dense"
 																margin="dense"
@@ -176,6 +158,44 @@ class Edit extends React.Component {
 															>
 																Update
 															</Button>
+															<br />
+															<h3>Add Student:</h3>
+															<div>
+																<TextField
+																	label="Student Name"
+																	style={{ marginLeft: '5px', marginRight: '5px' }}
+																	id="outlined-margin-dense"
+																	margin="dense"
+																	variant="outlined"
+																/>
+																<TextField
+																	label="Class"
+																	style={{ marginLeft: '5px', marginRight: '5px' }}
+																	id="outlined-margin-dense"
+																	margin="dense"
+																	variant="outlined"
+																/>
+																<TextField
+																	label="Avatar"
+																	placeholder="Enter Avatar URL"
+																	style={{ marginLeft: '5px', marginRight: '5px' }}
+																	id="outlined-margin-dense"
+																	margin="dense"
+																	variant="outlined"
+																/>
+																<br />
+																<br />
+																<Button
+																	style={{ margin: '5px' }}
+																	variant="contained"
+																	color="primary"
+																	className={classes.button}
+																	endIcon={<PublishIcon />}
+																	onClick={() => this.handleClick(item.id)}
+																>
+																	Add
+																</Button>
+															</div>
 														</div>
 													</div>
 												</Grid>

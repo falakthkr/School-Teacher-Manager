@@ -22,6 +22,9 @@ export default function StudentsTable(props) {
 						<TableCell align="center"  style={{ color: 'red' }}>
 							<b>Student Name</b>
 						</TableCell>
+						<TableCell align="center"  style={{ color: 'red' }}>
+							<b>Class</b>
+						</TableCell>
 					</TableRow>
 				</TableHead>
 				<TableBody>
@@ -33,6 +36,9 @@ export default function StudentsTable(props) {
 							</TableCell>
 							<TableCell align="center" >
 								{item.name}
+							</TableCell>
+							<TableCell align="center" >
+								{item.class}
 							</TableCell>
 						</TableRow>
 					))}

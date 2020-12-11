@@ -20,52 +20,62 @@
 				{
 					"id": 1,
 					"name": "Fina Drewitt",
-					"avatar": "http://dummyimage.com/157x138.jpg/ff4444/ffffff"
+					"avatar": "http://dummyimage.com/157x138.jpg/ff4444/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 2,
 					"name": "Giacobo Dumphy",
-					"avatar": "http://dummyimage.com/231x151.bmp/ff4444/ffffff"
+					"avatar": "http://dummyimage.com/231x151.bmp/ff4444/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 3,
 					"name": "Aridatha Shieber",
-					"avatar": "http://dummyimage.com/235x220.bmp/cc0000/ffffff"
+					"avatar": "http://dummyimage.com/235x220.bmp/cc0000/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 4,
 					"name": "Sheffie McRuvie",
-					"avatar": "http://dummyimage.com/239x227.jpg/dddddd/000000"
+					"avatar": "http://dummyimage.com/239x227.jpg/dddddd/000000",
+					"class": "1A Maths"
 				},
 				{
 					"id": 5,
 					"name": "Carleen Pawsey",
-					"avatar": "http://dummyimage.com/106x216.png/ff4444/ffffff"
+					"avatar": "http://dummyimage.com/106x216.png/ff4444/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 6,
 					"name": "Laurel Bellson",
-					"avatar": "http://dummyimage.com/126x101.png/ff4444/ffffff"
+					"avatar": "http://dummyimage.com/126x101.png/ff4444/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 7,
 					"name": "Myranda Strathdee",
-					"avatar": "http://dummyimage.com/131x145.jpg/5fa2dd/ffffff"
+					"avatar": "http://dummyimage.com/131x145.jpg/5fa2dd/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 8,
 					"name": "Gardy MacTurlough",
-					"avatar": "http://dummyimage.com/175x131.bmp/5fa2dd/ffffff"
+					"avatar": "http://dummyimage.com/175x131.bmp/5fa2dd/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 9,
 					"name": "Faustine Pipworth",
-					"avatar": "http://dummyimage.com/191x216.jpg/ff4444/ffffff"
+					"avatar": "http://dummyimage.com/191x216.jpg/ff4444/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 10,
 					"name": "Garfield Frail",
-					"avatar": "http://dummyimage.com/146x208.png/dddddd/000000"
+					"avatar": "http://dummyimage.com/146x208.png/dddddd/000000",
+					"class": "1A Maths"
 				}
 			],
 			"subject": "English"
@@ -83,52 +93,62 @@
 				{
 					"id": 1,
 					"name": "Fina Drewitt",
-					"avatar": "http://dummyimage.com/157x138.jpg/ff4444/ffffff"
+					"avatar": "http://dummyimage.com/157x138.jpg/ff4444/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 2,
 					"name": "Giacobo Dumphy",
-					"avatar": "http://dummyimage.com/231x151.bmp/ff4444/ffffff"
+					"avatar": "http://dummyimage.com/231x151.bmp/ff4444/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 3,
 					"name": "Aridatha Shieber",
-					"avatar": "http://dummyimage.com/235x220.bmp/cc0000/ffffff"
+					"avatar": "http://dummyimage.com/235x220.bmp/cc0000/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 4,
 					"name": "Sheffie McRuvie",
-					"avatar": "http://dummyimage.com/239x227.jpg/dddddd/000000"
+					"avatar": "http://dummyimage.com/239x227.jpg/dddddd/000000",
+					"class": "1A Maths"
 				},
 				{
 					"id": 5,
 					"name": "Carleen Pawsey",
-					"avatar": "http://dummyimage.com/106x216.png/ff4444/ffffff"
+					"avatar": "http://dummyimage.com/106x216.png/ff4444/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 6,
 					"name": "Laurel Bellson",
-					"avatar": "http://dummyimage.com/126x101.png/ff4444/ffffff"
+					"avatar": "http://dummyimage.com/126x101.png/ff4444/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 7,
 					"name": "Myranda Strathdee",
-					"avatar": "http://dummyimage.com/131x145.jpg/5fa2dd/ffffff"
+					"avatar": "http://dummyimage.com/131x145.jpg/5fa2dd/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 8,
 					"name": "Gardy MacTurlough",
-					"avatar": "http://dummyimage.com/175x131.bmp/5fa2dd/ffffff"
+					"avatar": "http://dummyimage.com/175x131.bmp/5fa2dd/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 9,
 					"name": "Faustine Pipworth",
-					"avatar": "http://dummyimage.com/191x216.jpg/ff4444/ffffff"
+					"avatar": "http://dummyimage.com/191x216.jpg/ff4444/ffffff",
+					"class": "1A Maths"
 				},
 				{
 					"id": 10,
 					"name": "Garfield Frail",
-					"avatar": "http://dummyimage.com/146x208.png/dddddd/000000"
+					"avatar": "http://dummyimage.com/146x208.png/dddddd/000000",
+					"class": "1A Maths"
 				}
 			]
 		},
