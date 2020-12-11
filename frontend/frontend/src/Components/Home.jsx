@@ -92,7 +92,6 @@ class Home extends React.Component {
 		const { classes } = this.props;
 		return (
 			<div className={classes.root}>
-				<Navbar />
 				<Grid container spacing={1} justify="center">
 					<h1>Teacher-Student Manager</h1>
 					<Grid container spacing={1} justify="center">

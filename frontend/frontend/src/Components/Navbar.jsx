@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography} from '@material-ui/core';
+import { AppBar, Button, Toolbar, Typography,IconButton} from '@material-ui/core';
+import HomeIcon from '@material-ui/icons/Home';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -23,12 +24,14 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Navbar() {
 	const classes = useStyles();
-
 	return (
 		<div className={classes.root}>
 			<AppBar position="static">
 				<Toolbar>
-				</Toolbar>
+					<IconButton edge="start" color="inherit">
+						<Link style={{color:"white"}} to="/home"><HomeIcon /></Link>
+					</IconButton>
+				</Toolbar>														
 			</AppBar>
 		</div>
 	);
