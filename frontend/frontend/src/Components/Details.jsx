@@ -116,6 +116,7 @@ class Edit extends React.Component {
 																label="First Name"
 																style={{ marginLeft: '5px', marginRight: '5px' }}
 																id="outlined-margin-dense"
+																placeholder={item.first_name}
 																margin="dense"
 																variant="outlined"
 															/>
@@ -123,6 +124,7 @@ class Edit extends React.Component {
 																label="Last Name"
 																style={{ marginLeft: '5px', marginRight: '5px' }}
 																id="outlined-margin-dense"
+																placeholder={item.last_name}
 																margin="dense"
 																variant="outlined"
 															/>
@@ -130,6 +132,7 @@ class Edit extends React.Component {
 															<br />
 															<TextField
 																label="Email"
+																placeholder={item.email}
 																style={{ marginLeft: '5px', marginRight: '5px' }}
 																id="outlined-margin-dense"
 																margin="dense"
@@ -137,6 +140,7 @@ class Edit extends React.Component {
 															/>
 															<TextField
 																label="Subject"
+																placeholder={item.subject}
 																style={{ marginLeft: '5px', marginRight: '5px' }}
 																id="outlined-margin-dense"
 																margin="dense"
@@ -146,6 +150,7 @@ class Edit extends React.Component {
 															<br />
 															<TextField
 																label="Gender"
+																placeholder={item.gender}
 																style={{ marginLeft: '5px', marginRight: '5px' }}
 																id="outlined-margin-dense"
 																margin="dense"
@@ -153,6 +158,7 @@ class Edit extends React.Component {
 															/>
 															<TextField
 																label="Avatar"
+																placeholder="Enter Avatar URL"
 																style={{ marginLeft: '5px', marginRight: '5px' }}
 																id="outlined-margin-dense"
 																margin="dense"
