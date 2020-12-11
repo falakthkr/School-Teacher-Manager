@@ -1,202 +1,274 @@
 {
-    "teachers" : [
-        {
-            "id": 1,
-            "avatar": "https://robohash.org/ipsuminsed.png?size=50x50&set=set1",
-            "first_name": "Nappy",
-            "last_name": "Worsley",
-            "email": "nworsley0@cbsnews.com",
-            "gender": "Female",
-            "age": 25,
-            "class" : [
-              {
-                "id" : "1A",
-                "class_name" : "Mathematics",
-                "subject_faculty" : "Nappy Worsley",
-                "students" : 20
-              }
-            ]
-          }, {
-            "id": 2,
-            "avatar": "https://robohash.org/quiiustoid.jpg?size=50x50&set=set1",
-            "first_name": "Arte",
-            "last_name": "Sket",
-            "email": "asket1@imdb.com",
-            "gender": "Female",
-            "age": 25,
-            "subject" : "Math"
-          }, {
-            "id": 3,
-            "avatar": "https://robohash.org/exsitdelectus.jpg?size=50x50&set=set1",
-            "first_name": "Sharl",
-            "last_name": "Eggins",
-            "email": "seggins2@shinystat.com",
-            "gender": "Female",
-            "age": 28,
-            "subject" : "Math"
-          }, {
-            "id": 4,
-            "avatar": "https://robohash.org/excepturiveniamea.jpg?size=50x50&set=set1",
-            "first_name": "Vonnie",
-            "last_name": "Sackes",
-            "email": "vsackes3@blogs.com",
-            "gender": "Male",
-            "age": 28,
-            "subject" : "Math"
-          }, {
-            "id": 5,
-            "avatar": "https://robohash.org/iustovoluptatibusautem.jpg?size=50x50&set=set1",
-            "first_name": "Mylo",
-            "last_name": "Stormont",
-            "email": "mstormont4@goodreads.com",
-            "gender": "Female",
-            "age": 44,
-            "subject" : "Math"
-          }, {
-            "id": 6,
-            "avatar": "https://robohash.org/distinctioutaspernatur.jpg?size=50x50&set=set1",
-            "first_name": "Eada",
-            "last_name": "Blitzer",
-            "email": "eblitzer5@networkadvertising.org",
-            "gender": "Female",
-            "age": 45,
-            "subject" : "Math"
-          }, {
-            "id": 7,
-            "avatar": "https://robohash.org/rerumfugiatrecusandae.jpg?size=50x50&set=set1",
-            "first_name": "Honor",
-            "last_name": "Grabban",
-            "email": "hgrabban6@ning.com",
-            "gender": "Male",
-            "age": 45,
-            "subject" : "Math"
-          }, {
-            "id": 8,
-            "avatar": "https://robohash.org/eosquodnon.jpg?size=50x50&set=set1",
-            "first_name": "Jacky",
-            "last_name": "Grigoletti",
-            "email": "jgrigoletti7@hao123.com",
-            "gender": "Male",
-            "age": 44,
-            "subject" : "Math"
-          }, {
-            "id": 9,
-            "avatar": "https://robohash.org/earumdoloremquevoluptate.png?size=50x50&set=set1",
-            "first_name": "Ben",
-            "last_name": "Swain",
-            "email": "bswain8@goo.ne.jp",
-            "gender": "Male",
-            "age": 65,
-            "subject" : "Math"
-          }, {
-            "id": 10,
-            "avatar": "https://robohash.org/dolorrepellatfuga.png?size=50x50&set=set1",
-            "first_name": "Zacherie",
-            "last_name": "Chatfield",
-            "email": "zchatfield9@tiny.cc",
-            "gender": "Female",
-            "age": 44,
-            "subject" : "Math"
-          }, {
-            "id": 11,
-            "avatar": "https://robohash.org/voluptatemnihileos.bmp?size=50x50&set=set1",
-            "first_name": "Myranda",
-            "last_name": "Halfacree",
-            "email": "mhalfacreea@soup.io",
-            "gender": "Male",
-            "age": 33,
-            "subject" : "Math"
-          }, {
-            "id": 12,
-            "avatar": "https://robohash.org/quoquaerata.png?size=50x50&set=set1",
-            "first_name": "Sue",
-            "last_name": "Kohlerman",
-            "email": "skohlermanb@go.com",
-            "gender": "Male",
-            "age": 31,
-            "subject" : "Math"
-          }, {
-            "id": 13,
-            "avatar": "https://robohash.org/quodenimid.jpg?size=50x50&set=set1",
-            "first_name": "Faulkner",
-            "last_name": "Coopper",
-            "email": "fcoopperc@purevolume.com",
-            "gender": "Male",
-            "age": 31,
-            "subject" : "Math"
-          }, {
-            "id": 14,
-            "avatar": "https://robohash.org/quiaaet.bmp?size=50x50&set=set1",
-            "first_name": "Dennis",
-            "last_name": "Djurevic",
-            "email": "ddjurevicd@google.it",
-            "gender": "Male",
-            "age": 34,
-            "subject" : "Math"
-          }, {
-            "id": 15,
-            "avatar": "https://robohash.org/rerumnatusnumquam.bmp?size=50x50&set=set1",
-            "first_name": "Audrie",
-            "last_name": "Wadforth",
-            "email": "awadforthe@wikipedia.org",
-            "gender": "Male",
-            "age": 45,
-            "subject" : "Math"
-          }, {
-            "id": 16,
-            "avatar": "https://robohash.org/ininventoresed.jpg?size=50x50&set=set1",
-            "first_name": "Betta",
-            "last_name": "Houlston",
-            "email": "bhoulstonf@dion.ne.jp",
-            "gender": "Female",
-            "age": 55,
-            "subject" : "Math"
-          }, {
-            "id": 17,
-            "avatar": "https://robohash.org/necessitatibusdolorumeum.png?size=50x50&set=set1",
-            "first_name": "Tate",
-            "last_name": "Tym",
-            "email": "ttymg@smugmug.com",
-            "gender": "Female",
-            "age": 67,
-            "subject" : "Math"
-          }, {
-            "id": 18,
-            "avatar": "https://robohash.org/sintquisatque.jpg?size=50x50&set=set1",
-            "first_name": "Aubrie",
-            "last_name": "Matchett",
-            "email": "amatchetth@time.com",
-            "gender": "Female",
-            "age": 45,
-            "subject" : "Math"
-          }, {
-            "id": 19,
-            "avatar": "https://robohash.org/delenitiassumendarerum.jpg?size=50x50&set=set1",
-            "first_name": "Wilmer",
-            "last_name": "Handasyde",
-            "email": "whandasydei@sbwire.com",
-            "gender": "Male",
-            "age": 65,
-            "subject" : "Math"
-          }, {
-            "id": 20,
-            "avatar": "https://robohash.org/nonvitaeiste.png?size=50x50&set=set1",
-            "first_name": "Nannette",
-            "last_name": "Isaksen",
-            "email": "nisaksenj@wikispaces.com",
-            "gender": "Male",
-            "age": 34,
-            "subject" : "Math"
-          }
-    ],
-    "users" : [
-      {
-        "username" : "admin",
-        "password" : "test@123"
-      },
-      {
-        "username" : "adminOne",
-        "password" : "test@One"
-      }
-    ]
+	"teachers": [
+		{
+			"id": 1,
+			"avatar": "https://robohash.org/ipsuminsed.png?size=50x50&set=set1",
+			"first_name": "Nappy",
+			"last_name": "Worsley",
+			"email": "nworsley0@cbsnews.com",
+			"gender": "Female",
+			"age": 25,
+			"class": [
+				{
+					"id": "1A",
+					"class_name": "Mathematics",
+					"subject_faculty": "Nappy Worsley",
+					"students": 20
+				}
+			],
+			"students": [
+				{
+					"id": 1,
+					"name": "Fina Drewitt",
+					"avatar": "http://dummyimage.com/157x138.jpg/ff4444/ffffff"
+				},
+				{
+					"id": 2,
+					"name": "Giacobo Dumphy",
+					"avatar": "http://dummyimage.com/231x151.bmp/ff4444/ffffff"
+				},
+				{
+					"id": 3,
+					"name": "Aridatha Shieber",
+					"avatar": "http://dummyimage.com/235x220.bmp/cc0000/ffffff"
+				},
+				{
+					"id": 4,
+					"name": "Sheffie McRuvie",
+					"avatar": "http://dummyimage.com/239x227.jpg/dddddd/000000"
+				},
+				{
+					"id": 5,
+					"name": "Carleen Pawsey",
+					"avatar": "http://dummyimage.com/106x216.png/ff4444/ffffff"
+				},
+				{
+					"id": 6,
+					"name": "Laurel Bellson",
+					"avatar": "http://dummyimage.com/126x101.png/ff4444/ffffff"
+				},
+				{
+					"id": 7,
+					"name": "Myranda Strathdee",
+					"avatar": "http://dummyimage.com/131x145.jpg/5fa2dd/ffffff"
+				},
+				{
+					"id": 8,
+					"name": "Gardy MacTurlough",
+					"avatar": "http://dummyimage.com/175x131.bmp/5fa2dd/ffffff"
+				},
+				{
+					"id": 9,
+					"name": "Faustine Pipworth",
+					"avatar": "http://dummyimage.com/191x216.jpg/ff4444/ffffff"
+				},
+				{
+					"id": 10,
+					"name": "Garfield Frail",
+					"avatar": "http://dummyimage.com/146x208.png/dddddd/000000"
+				}
+			],
+			"subject": "English"
+		},
+		{
+			"id": 2,
+			"avatar": "https://robohash.org/quiiustoid.jpg?size=50x50&set=set1",
+			"first_name": "Arte",
+			"last_name": "Sket",
+			"email": "asket1@imdb.com",
+			"gender": "Female",
+			"age": 25,
+			"subject": "Math"
+		},
+		{
+			"id": 3,
+			"avatar": "https://robohash.org/exsitdelectus.jpg?size=50x50&set=set1",
+			"first_name": "Sharl",
+			"last_name": "Eggins",
+			"email": "seggins2@shinystat.com",
+			"gender": "Female",
+			"age": 28,
+			"subject": "Math"
+		},
+		{
+			"id": 4,
+			"avatar": "https://robohash.org/excepturiveniamea.jpg?size=50x50&set=set1",
+			"first_name": "Vonnie",
+			"last_name": "Sackes",
+			"email": "vsackes3@blogs.com",
+			"gender": "Male",
+			"age": 28,
+			"subject": "Math"
+		},
+		{
+			"id": 5,
+			"avatar": "https://robohash.org/iustovoluptatibusautem.jpg?size=50x50&set=set1",
+			"first_name": "Mylo",
+			"last_name": "Stormont",
+			"email": "mstormont4@goodreads.com",
+			"gender": "Female",
+			"age": 44,
+			"subject": "Math"
+		},
+		{
+			"id": 6,
+			"avatar": "https://robohash.org/distinctioutaspernatur.jpg?size=50x50&set=set1",
+			"first_name": "Eada",
+			"last_name": "Blitzer",
+			"email": "eblitzer5@networkadvertising.org",
+			"gender": "Female",
+			"age": 45,
+			"subject": "Math"
+		},
+		{
+			"id": 7,
+			"avatar": "https://robohash.org/rerumfugiatrecusandae.jpg?size=50x50&set=set1",
+			"first_name": "Honor",
+			"last_name": "Grabban",
+			"email": "hgrabban6@ning.com",
+			"gender": "Male",
+			"age": 45,
+			"subject": "Math"
+		},
+		{
+			"id": 8,
+			"avatar": "https://robohash.org/eosquodnon.jpg?size=50x50&set=set1",
+			"first_name": "Jacky",
+			"last_name": "Grigoletti",
+			"email": "jgrigoletti7@hao123.com",
+			"gender": "Male",
+			"age": 44,
+			"subject": "Math"
+		},
+		{
+			"id": 9,
+			"avatar": "https://robohash.org/earumdoloremquevoluptate.png?size=50x50&set=set1",
+			"first_name": "Ben",
+			"last_name": "Swain",
+			"email": "bswain8@goo.ne.jp",
+			"gender": "Male",
+			"age": 65,
+			"subject": "Math"
+		},
+		{
+			"id": 10,
+			"avatar": "https://robohash.org/dolorrepellatfuga.png?size=50x50&set=set1",
+			"first_name": "Zacherie",
+			"last_name": "Chatfield",
+			"email": "zchatfield9@tiny.cc",
+			"gender": "Female",
+			"age": 44,
+			"subject": "Math"
+		},
+		{
+			"id": 11,
+			"avatar": "https://robohash.org/voluptatemnihileos.bmp?size=50x50&set=set1",
+			"first_name": "Myranda",
+			"last_name": "Halfacree",
+			"email": "mhalfacreea@soup.io",
+			"gender": "Male",
+			"age": 33,
+			"subject": "Math"
+		},
+		{
+			"id": 12,
+			"avatar": "https://robohash.org/quoquaerata.png?size=50x50&set=set1",
+			"first_name": "Sue",
+			"last_name": "Kohlerman",
+			"email": "skohlermanb@go.com",
+			"gender": "Male",
+			"age": 31,
+			"subject": "Math"
+		},
+		{
+			"id": 13,
+			"avatar": "https://robohash.org/quodenimid.jpg?size=50x50&set=set1",
+			"first_name": "Faulkner",
+			"last_name": "Coopper",
+			"email": "fcoopperc@purevolume.com",
+			"gender": "Male",
+			"age": 31,
+			"subject": "Math"
+		},
+		{
+			"id": 14,
+			"avatar": "https://robohash.org/quiaaet.bmp?size=50x50&set=set1",
+			"first_name": "Dennis",
+			"last_name": "Djurevic",
+			"email": "ddjurevicd@google.it",
+			"gender": "Male",
+			"age": 34,
+			"subject": "Math"
+		},
+		{
+			"id": 15,
+			"avatar": "https://robohash.org/rerumnatusnumquam.bmp?size=50x50&set=set1",
+			"first_name": "Audrie",
+			"last_name": "Wadforth",
+			"email": "awadforthe@wikipedia.org",
+			"gender": "Male",
+			"age": 45,
+			"subject": "Math"
+		},
+		{
+			"id": 16,
+			"avatar": "https://robohash.org/ininventoresed.jpg?size=50x50&set=set1",
+			"first_name": "Betta",
+			"last_name": "Houlston",
+			"email": "bhoulstonf@dion.ne.jp",
+			"gender": "Female",
+			"age": 55,
+			"subject": "Math"
+		},
+		{
+			"id": 17,
+			"avatar": "https://robohash.org/necessitatibusdolorumeum.png?size=50x50&set=set1",
+			"first_name": "Tate",
+			"last_name": "Tym",
+			"email": "ttymg@smugmug.com",
+			"gender": "Female",
+			"age": 67,
+			"subject": "Math"
+		},
+		{
+			"id": 18,
+			"avatar": "https://robohash.org/sintquisatque.jpg?size=50x50&set=set1",
+			"first_name": "Aubrie",
+			"last_name": "Matchett",
+			"email": "amatchetth@time.com",
+			"gender": "Female",
+			"age": 45,
+			"subject": "Math"
+		},
+		{
+			"id": 19,
+			"avatar": "https://robohash.org/delenitiassumendarerum.jpg?size=50x50&set=set1",
+			"first_name": "Wilmer",
+			"last_name": "Handasyde",
+			"email": "whandasydei@sbwire.com",
+			"gender": "Male",
+			"age": 65,
+			"subject": "Math"
+		},
+		{
+			"id": 20,
+			"avatar": "https://robohash.org/nonvitaeiste.png?size=50x50&set=set1",
+			"first_name": "Nannette",
+			"last_name": "Isaksen",
+			"email": "nisaksenj@wikispaces.com",
+			"gender": "Male",
+			"age": 34,
+			"subject": "Math"
+		}
+	],
+	"users": [
+		{
+			"username": "admin",
+			"password": "test@123"
+		},
+		{
+			"username": "adminOne",
+			"password": "test@One"
+		}
+	]
 }

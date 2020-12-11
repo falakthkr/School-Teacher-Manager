@@ -2,6 +2,7 @@ import React from "react"
 import {connect} from "react-redux"
 import {Redirect} from "react-router-dom"
 import {checkLoginDetails} from "../Redux/Auth/actions"
+import Navbar from "./Navbar"
 
 class Login extends React.Component{
     constructor(props){
@@ -36,6 +37,7 @@ class Login extends React.Component{
         console.log(this.props)
         return(
             <div>
+                <Navbar />
                 <h3>Admin Login</h3>
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" name="username" value={username} onChange={this.handleChange} placeholder="Username" style={{width:"500px",height:"40px",borderRadius:"5px",border:"1px solid black"}}/>
