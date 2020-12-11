@@ -4,7 +4,7 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Pagination from '@material-ui/lab/Pagination';
 import Navbar from "./Navbar"
-import Teachers from "./Teachers"
+import DetailsTable from "./Teachers"
 
 
 const useStyles = makeStyles((theme) => ({
@@ -96,7 +96,7 @@ class Home extends React.Component {
 				<Grid container spacing={1} justify="center">
 					<h1>Teacher-Student Manager</h1>
 					<Grid container spacing={1} justify="center">
-						<Teachers data={teachers}/>
+						<DetailsTable data={teachers}/>
 					</Grid>
 					<br />
 					<br />

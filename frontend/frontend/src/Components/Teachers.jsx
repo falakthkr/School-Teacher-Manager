@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import Avatar from '@material-ui/core/Avatar';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
-export default function Teachers(props) {
+export default function DetailsTable(props) {
 	return (
 		<TableContainer component={Paper}>
 			<Table>
