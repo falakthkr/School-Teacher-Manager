@@ -6,13 +6,9 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import DeleteIcon from '@material-ui/icons/Delete';
-import EditIcon from '@material-ui/icons/Edit';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { Link } from 'react-router-dom';
 import Pagination from '@material-ui/lab/Pagination';
-import TextField from '@material-ui/core/TextField';
-import { Container } from '@material-ui/core';
-import SendIcon from '@material-ui/icons/Send';
 import { v4 as uuid } from 'uuid';
 
 const useStyles = makeStyles((theme) => ({
@@ -49,13 +45,12 @@ class Home extends React.Component {
 		super(props);
 		this.state = {
 			loading: true,
-			students: [],
+			teachers: [],
 			name: '',
-			group: '',
 			email: '',
-			city: '',
 			avatar: '',
 			gender: '',
+			age:"",
 			limit: 5,
 			page: 1
 		};
@@ -63,10 +58,10 @@ class Home extends React.Component {
 
 	componentDidMount = () => {
 		axios
-            .get(`http://localhost:5000/teachers`)
+            .get(`http://localhost:5000/teachers?_page=${this.state.page}&_limit=${this.state.limit}`)
 			.then((res) => {
 				this.setState({
-					students: res.data,
+					teachers: res.data,
 					loading: false
 				});
 			})
@@ -74,10 +69,10 @@ class Home extends React.Component {
 
 	getData = () => {
 		axios
-			.get(`http://localhost:5000/teachers`)
+			.get(`http://localhost:5000/teachers?_page=${this.state.page}&_limit=${this.state.limit}`)
 			.then((res) => {
 				this.setState({
-					students: res.data,
+					teachers: res.data,
 					loading: false
 				});
 			});
@@ -85,10 +80,10 @@ class Home extends React.Component {
 
 	getPage = (page) => {
 		axios
-			.get(`http://localhost:5000/teachers`)
+			.get(`http://localhost:5000/teachers?_page=${page}&_limit=${this.state.limit}`)
 			.then((res) => {
 				this.setState({
-					students: res.data,
+					teachers: res.data,
 					loading: false
 				});
 			});
@@ -103,7 +98,7 @@ class Home extends React.Component {
 
 	uploadData = () => {
 		axios
-			.post('http://localhost:5000/api/students', {
+			.post('http://localhost:5000/api/teachers', {
 				name: this.state.name,
 				group: this.state.group,
 				email: this.state.email,
@@ -132,13 +127,12 @@ class Home extends React.Component {
 
 	render() {
 		console.log(this.state);
-		const { deleteData, uploadData, handleChange } = this;
-		const { students, name, email, gender, city, avatar, group } = this.state;
+		const { teachers} = this.state;
 		const { classes } = this.props;
 		function FormRow() {
 			return (
 				<React.Fragment>
-					{students.map((item) => {
+					{teachers.map((item) => {
 						return (
 							<Grid item xs={4}>
 								<Card className={classes.cardRoot} align="center">
@@ -159,18 +153,10 @@ class Home extends React.Component {
 												variant="contained"
 												color="default"
 												className={classes.button}
-												startIcon={<EditIcon />}
+												startIcon={<ArrowForwardIosIcon/>}
 												style={{ margin: '3px' }}
 											/>
 										</Link>
-										<Button
-											variant="contained"
-											color="secondary"
-											className={classes.button}
-											startIcon={<DeleteIcon />}
-											style={{ margin: '3px' }}
-											onClick={() => deleteData(item._id)}
-										/>
 									</CardContent>
 								</Card>
 							</Grid>
@@ -182,82 +168,12 @@ class Home extends React.Component {
 		return (
 			<div className={classes.root}>
 				<Grid container spacing={1} justify="center">
-					<h1>Apache Student Crud</h1>
-					<Container>
-						<form className={classes.formRoot}>
-							<TextField
-								style={{ margin: '5px' }}
-								onChange={handleChange}
-								name="name"
-								value={name}
-								id="outlined-basic"
-								label="Enter Student Name"
-								variant="outlined"
-							/>
-							<TextField
-								style={{ margin: '5px' }}
-								onChange={handleChange}
-								name="group"
-								value={group}
-								id="outlined-basic"
-								label="Enter Blood Group"
-								variant="outlined"
-							/>
-							<TextField
-								style={{ margin: '5px' }}
-								onChange={handleChange}
-								name="email"
-								value={email}
-								id="outlined-basic"
-								label="Enter Student Email"
-								variant="outlined"
-							/>
-							<br />
-							<TextField
-								style={{ margin: '5px' }}
-								onChange={handleChange}
-								name="city"
-								value={city}
-								id="outlined-basic"
-								label="Enter Student's City"
-								variant="outlined"
-							/>
-							<TextField
-								style={{ margin: '5px' }}
-								onChange={handleChange}
-								name="avatar"
-								value={avatar}
-								id="outlined-basic"
-								label="Insert Avatar URL"
-								variant="outlined"
-							/>
-							<TextField
-								style={{ margin: '5px' }}
-								onChange={handleChange}
-								name="gender"
-								value={gender}
-								id="outlined-basic"
-								label="Student's Gender"
-								variant="outlined"
-							/>
-							<br />
-							<Button
-								style={{ margin: '5px' }}
-								variant="contained"
-								color="primary"
-								className={classes.button}
-								endIcon={<SendIcon />}
-								onClick={() => uploadData()}
-							>
-								Send
-							</Button>
-						</form>
-					</Container>
+					<h1>Teacher-Student Manager</h1>
 					<Grid container item xs={12} justify="center" spacing={3}>
 						<FormRow />
 					</Grid>
 					<br />
-					<Pagination onChange={(x, page) => this.getPage(page)} value={1} count={6} />
+					<Pagination onChange={(x, page) => this.getPage(page)} value={1} count={4} />
 				</Grid>
 			</div>
 		);
