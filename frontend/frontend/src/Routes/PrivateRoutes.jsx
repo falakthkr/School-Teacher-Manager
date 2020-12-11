@@ -2,6 +2,7 @@ import React from "react"
 import {Redirect,Route} from "react-router-dom"
 import {connect} from "react-redux"
 import Home from "../Components/Home"
+import Edit from "../Components/Teacher"
 
 class PrivateRoutes extends React.Component{
     render(){
@@ -9,7 +10,10 @@ class PrivateRoutes extends React.Component{
         if(isAuth){
             console.log(isAuth)
             return(
-                <Route path="/home" exact component={Home} />
+                <>
+                    <Route exact path="/home" render={()=><Home />} />
+                    <Route path=":/id" render={(props)=><Edit {...props} />} />
+                </>
             )
         }
         else{

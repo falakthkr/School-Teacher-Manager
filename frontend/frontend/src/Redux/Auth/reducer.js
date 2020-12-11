@@ -2,7 +2,7 @@ import {LOGIN_REQUEST,LOGIN_SUCCESS,LOGIN_FAILURE} from "./actionTypes"
 
 export const initState = {
   token: "",
-  isAuth: false,
+  isAuth: true,
   isLoading: false,
   isError: false,
   facultyData :[]
