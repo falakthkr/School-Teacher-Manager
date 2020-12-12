@@ -20,7 +20,6 @@ import {
 } from "./actionTypes"
 
 import axios from "axios"
-import { get } from "mongoose"
 
 export const getDataSuccess = (payload) => {
     return{
@@ -160,8 +159,8 @@ export const getPage = (payload) => (dispatch) => {
     const{page,limit} = payload
     dispatch(getPageRequest())
     return axios.get(`http://localhost:5000/teachers?_page=${page}&_limit=${limit}`)
-    .then(res=>getData(res))
     .then(res=>dispatch(getPageSuccess(res)))
+    .then(res=>getData(res))
     .catch(err=>dispatch(getPageFailure(err)))
 }
 
@@ -191,8 +190,7 @@ export const getAgeSort = (payload) => (dispatch) => {
     const{page,limit} = payload
     dispatch(getAgeSortRequest())
     return axios.get(`http://localhost:5000/teachers?_page=${page}&_limit=${limit}&_sort=age&_order=asc`)
-    .then(res=>dispatch(getAgeSortSuccess(res))
+    .then(res=>dispatch(getAgeSortSuccess(res)))
     .then(res=>getData(res))
     .catch(err=>dispatch(getAgeSortFailure(err)))
-
 }
