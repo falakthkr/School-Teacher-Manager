@@ -1,5 +1,6 @@
 const express = require('express');
 const Teacher = require('./models/Teacher');
+const Student = require("./models/Student")
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
@@ -23,7 +24,7 @@ app.get('/teachers', (req, res) => {
 
 app.post('/teachers', (req, res) => {
 	const { id,avatar,first_name,last_name,email,gender,age,students } = req.body;
-	const newTeacher = new Student({ id,avatar,first_name,last_name,email,gender,age,students });
+	const newTeacher = new Teacher({ id,avatar,first_name,last_name,email,gender,age,students });
 
 	newTeacher
 		.save()
