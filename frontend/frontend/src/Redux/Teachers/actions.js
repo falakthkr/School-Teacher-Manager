@@ -13,7 +13,10 @@ import {
     GET_FEMALE_FILTER_FAILURE,
     GET_PAGE_SUCCESS,
     GET_PAGE_FAILURE,
-    GET_PAGE_REQUEST
+    GET_PAGE_REQUEST,
+    GET_AGE_SORT_SUCCESS,
+    GET_AGE_SORT_FAILURE,
+    GET_AGE_SORT_REQUEST
 } from "./actionTypes"
 
 import axios from "axios"
@@ -157,5 +160,39 @@ export const getPage = (payload) => (dispatch) => {
     const{page,limit} = payload
     dispatch(getPageRequest())
     return axios.get(`http://localhost:5000/teachers?_page=${page}&_limit=${limit}`)
+    .then(res=>getData(res))
     .then(res=>dispatch(getPageSuccess(res)))
+    .catch(err=>dispatch(getPageFailure(err)))
+}
+
+export const getAgeSortSuccess = (payload) => {
+    return{
+        TYPE : GET_AGE_SORT_SUCCESS,
+        payload
+    }
+}
+
+export const getAgeSortFailure = (payload) => {
+    return{
+        TYPE : GET_AGE_SORT_FAILURE,
+        payload
+    }
+}
+
+export const getAgeSortRequest = (payload) => {
+    return{
+        TYPE : GET_AGE_SORT_REQUEST,
+        payload
+    }
+}
+
+export const getAgeSort = (payload) => (dispatch) => {
+    console.log(payload)
+    const{page,limit} = payload
+    dispatch(getAgeSortRequest())
+    return axios.get(`http://localhost:5000/teachers?_page=${page}&_limit=${limit}&_sort=age&_order=asc`)
+    .then(res=>dispatch(getAgeSortSuccess(res))
+    .then(res=>getData(res))
+    .catch(err=>dispatch(getAgeSortFailure(err)))
+
 }
