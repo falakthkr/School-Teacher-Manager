@@ -103,6 +103,15 @@ export const getFemaleFilterFailure = (payload) => {
     }
 }
 
+export const getFemaleFilter = (payload) => (dispatch) => {
+    console.log(payload)
+    dispatch(getFemaleFilterRequest())
+    return axios.get(`http://localhost:5000/teachers?gender=Female`)
+    .then(res=>dispatch(getFemaleFilterSuccess(res)))
+    .then(getData())
+    .catch(err=>dispatch(getFemaleFilterFailure(err)))
+}
+
 export const getMaleFilterSuccess = (payload) => {
     return{
         TYPE :  GET_MALE_FILTER_SUCCESS,
