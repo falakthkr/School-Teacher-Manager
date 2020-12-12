@@ -1,5 +1,5 @@
 const express = require('express');
-const Student = require('./models/Student');
+const Teacher = require('./models/Teacher');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
@@ -17,13 +17,22 @@ mongoose.connect(
 	}
 );
 
-app.get('/api/students', (req, res) => {
-	Student.find().then((students) => res.json(students)).catch((err) => res.status(400).json('Error: ' + err));
+app.get('/teachers', (req, res) => {
+	Teacher.find().then((students) => res.json(students)).catch((err) => res.status(400).json('Error: ' + err));
 });
 
-app.post('/api/students', (req, res) => {
-	const { id, name, group, email, city, avatar, gender } = req.body;
-	const newStudent = new Student({ id, name, group, email, city, avatar, gender });
+app.post('/teachers', (req, res) => {
+	const { id,avatar,first_name,last_name,email,gender,age,students } = req.body;
+	const newTeacher = new Student({ id,avatar,first_name,last_name,email,gender,age,students });
+
+	newTeacher
+		.save()
+		.then(() => res.json('Teacher Added Successfully'))
+		.catch((err) => res.status(400).json('Error: ' + err));
+});
+app.post('/teachers/student', (req, res) => {
+	const { id,avatar,name,subject } = req.body;
+	const newStudent = new Student({ id,avatar,name,subject });
 
 	newStudent
 		.save()
@@ -31,24 +40,24 @@ app.post('/api/students', (req, res) => {
 		.catch((err) => res.status(400).json('Error: ' + err));
 });
 
-app.delete('/api/student/:id', (req, res) => {
-	Student.findByIdAndDelete(req.params.id)
-		.then(() => res.json('Student Deleted Successfully'))
+app.delete('/api/teacher/:id', (req, res) => {
+	Teacher.findByIdAndDelete(req.params.id)
+		.then(() => res.json('Teacher Deleted Successfully'))
 		.catch((err) => res.status(400).json('Error: ' + err));
 });
 
-app.post('/api/student/update/:id', (req, res) => {
-	Student.findById(req.params.id)
-		.then((student) => {
-			student.name = req.body.name;
-			student.group = req.body.group;
-			student.email = req.body.email;
-			student.city = req.body.city;
-			student.avatar = req.body.avatar;
+app.post('/api/teacher/update/:id', (req, res) => {
+	Teacher.findById(req.params.id)
+		.then((teacher) => {
+			teacher.name = req.body.name;
+			teacher.group = req.body.group;
+			teacher.email = req.body.email;
+			teacher.city = req.body.city;
+			teacher.avatar = req.body.avatar;
 
-			student
+			teacher
 				.save()
-				.then(() => res.json('Student updated Successfully'))
+				.then(() => res.json('Teacher updated Successfully'))
 				.catch((err) => res.status(400).json('Error: ' + err));
 		})
 		.catch((err) => res.status(400).json('Error: ' + err));
