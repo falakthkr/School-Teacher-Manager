@@ -240,7 +240,7 @@ class Home extends React.Component {
 						<Pagination
 							style={{ marginTop: '30px' }}
 							onChange={(x, page) => this.getPage(page)}
-							value={1}
+							value={this.state.page}
 							count={4}
 						/>
 					</Grid>
